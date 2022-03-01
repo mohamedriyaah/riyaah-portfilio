@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "dhivehi";
+  src: url(fonts/MVWaheed.otf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "dhivehi";
+  src: url(fonts/MVWaheed.otf);
+  font-weight: 400;
+}
+   
+
+#my-photo {
+    border-radius: 60%;  
+    border-width: 10px; 
+    border-color: rgb(155, 81, 224); 
+    border-style: solid;
+    margin-bottom: 30px;
+    margin-top: 70px;
+  }
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+  }
+  #hero {
+      text-align: center;
+      background: linear-gradient(rgba(11,207,150,0.7), rgba(11,207,150,0.7)), url('img/bg2.jpg');
+      padding-bottom: 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  h4 {
+    margin: 5px;
+    text-transform: uppercase; 
+    font-size: 16px;
+    text-align: left;
+    padding-left: 253px;
+    padding-top: 23px;
+  }
+
+  #description {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-left: 258px;
+  }
+  #intro {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #name-2 {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 45px;
+
+    animation: colordancer 5s;
+  }
+  #title {
+    color: white;
+    background-color: rgb(155, 81, 224);
+    font-size: 30px;
+    padding: 10px;
+    width: 300px;
+    margin-left: 464px;
+    margin: auto;
+  }
+  footer {
+    text-align: center;
+    background-color: rgb(79, 79, 79);
+    padding: 20px;
+    margin-top: 65px;
+  }
+  .white {
+    color: white;
+  }
+  .footer-icon {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  nav ul {
+    list-style: none;
+  }
+  nav a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: inherit;
+    font-weight: 800;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  header {
+    position: absolute;
+    top: 30px;
+    bottom: 265px;
+    right: 0;
+    left: 0;
+    width: 1200px;
+    margin: auto;
+  }
+  header nav {
+    display: inline;
+    float: right;
+    padding-right: 5px;
+  }
+  #content {
+    width: 1200px;
+  }
+  .thumbnail {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: -42px;
+    margin-left: 84px;
+    margin-top: 40px;
+  }
+  .thumbnail img {
+    width: 350px;
+    height: 250px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-left: 15px;
+    transition: all 0.4s;
+    object-position: right;
+  }
+  .thumbnail h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    margin-left: 19px;
+  }
+  .thumbnail h3 {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: 600;
+    margin-left: 18px;
+  }
+  .thumbnail p {
+    font-size: 12px;
+    margin: 5px 0;
+    font-weight: 600;
+    margin-left: 18px;
+  }
+  .thumbnail:hover h2 {
+    color: red;
+  }
+  .thumbnail:hover img {
+    border-radius: 0;
+    object-position: center;
+  }
+  @keyframes colordance {
+    0% {
+      color:red
+    }
+    100% {
+      color:green
+    }
+  }
+  @media (max-width: 1200px) {
+    header, #content {
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      margin: auto;
+      margin-top: 10px;
+    }
+    #description {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #topic {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #dhivehi article {
+      margin-top: 10px;
+
+    }
+  }
+  @media (max-width:768px) {
+    .thumbnail {
+      display: block;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 150px;
+      padding-top: 20px;
+    }
+  }
+  .dhivehi {
+    font-family: dhivehi;
+    direction: rtl;
+    text-align: justify;
+    margin-left: 78px;
+    margin-top: 30px;
+  }
+  .article h2 {
+    font-size: 40px;
+  }
+  .article p {
+    font-size: 20px;
+    line-height: 35px;
+    color: black;
+  }
+  .article img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  #mobile-menu {
+    float: right;
+
+  }
+  @media (min-width: 768px) {
+    #mobile-menu {
+      display: none;
+    }
+  }
+  @media (max-width:768px) {
+    header nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background-color: blue;
+      transition: all 1s;
+      text-align: center;
+      padding-top: 200px;
+      overflow: hidden;
+    }
+    
+    header nav.open {
+      right: 0;
+    }
+    nav li {
+      display: block;
+    }
+    nav a {
+      font-size: 25px;
+    }
+  }
+#mobile-menu {
+  position: fixed;
+  right: 25px;
+}
